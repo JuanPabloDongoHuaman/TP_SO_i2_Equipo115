@@ -1,2 +1,5 @@
 
 Nombre: Leonardo De Gregorio\nIP: 192.158.52\n12:18:38
+Nombre: Juan Pablo Dongo Huaman
+IP: 192.168.56.1
+12:37:25
