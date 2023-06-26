@@ -1,1 +1,4 @@
-
+a-¿Como actualizo mi repositorio, al estado que esté el repo que hice FORK?
+ con git remote add upstream repositorio, git fetch upstream, git checkout main, git rebase upstream/master, git push -f origin main
+b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
+Si
