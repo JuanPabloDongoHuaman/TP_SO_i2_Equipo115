@@ -11,3 +11,60 @@ Si
 d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
 el fork?
 Si
+e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
+orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos ,
+
+[Juan Pablo Dongo Huaman]
+BETA - Punto 1)
+git config --global user.name JuanPablo-DH
+git config --global user.email juanpid29@gmail.com
+git clone https://github.com/JuanPablo-DH/TP_SO_i2_Equipo115.git
+cd TP_SO_i2_Equipo115/
+echo "" > fork.txt
+git add .
+git commit -m "BETA punto 1)"
+git push origin main
+
+[Leonardo De Gregorio]
+GAMMA - Punto 2)
+git clone https://github.com/LeoDG0/TP_SO_i2_Equipo115.git
+cd TP_SO_i2_Equipo115/
+echo "Nombre: Leonardo De Gregorio\nIP: 192.158.52\n$(date +%H:%M:%S)" >> fork.txt
+git add .
+git commit -m "datos gamma"
+git push origin main
+
+[Juan Pablo Dongo Huaman]
+ALFA - Punto 3)
+git config --global user.name JuanPabloDongoHuaman
+git config --global user.email juanpablo.dh29@gmail.com
+git clone https://github.com/JuanPabloDongoHuaman/TP_SO_i2_Equipo115.git
+cd TP_SO_i2_Equipo115/
+echo "Nombre: Juan Pablo Dongo Huaman" >> fork.txt
+echo "IP: 192.168.56.1" >> fork.txt
+date +%H:%M:%S >> fork.txt
+Nombre: Juan Pablo Dongo Huaman
+IP: 192.168.56.1
+12:37:25
+git add .
+git commit -m "ALFA Punto 3)"
+git push origin main
+
+[Juan Pablo Dongo Huaman]
+BETA - Punto 4)
+git config --global user.name JuanPablo-DH
+git config --global user.email juanpid29@gmail.com
+git clone https://github.com/JuanPablo-DH/TP_SO_i2_Equipo115.git
+cd TP_SO_i2_Equipo115/
+echo "" > NuevoDato.txt
+git add .
+git commit -m "BETA Punto 4)"
+git push origin main
+
+[Leonardo De Gregorio] y [Juan Pablo Dongo Huaman]
+GAMMA y ALFA - Punto 5)
+git remote add upstream https://github.com/JuanPablo-DH/TP_SO_i2_Equipo115.git
+git fetch upstream
+git checkout main
+git rebase upstream/main
+git push -f origin main
